@@ -1,0 +1,578 @@
+/* Add these animation keyframes at the top */
+@keyframes slideIn {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes strikethrough {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+  }
+  
+  /*Scrollbar*/
+  
+  /* Apply scrollbar styling to the whole site */
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+  }
+  
+  /* The scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: rgba(51, 51, 51, 0.8); /* Match with website's theme */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* The scrollbar handle (thumb) */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4); /* Light handle color */
+    border-radius: 5px; /* Rounded corners */
+    border: 3px solid rgba(51, 51, 51, 0.8); /* Adds padding effect */
+  }
+  
+  /* Handle hover effect */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6); /* Brighter on hover */
+  }
+  
+  /* Optional: For horizontal scrollbars */
+  ::-webkit-scrollbar-horizontal {
+    height: 10px; /* Height of the horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb-horizontal {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Body */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(209, 209, 49);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .external {
+    display: flex;
+    background-color: rgb(209, 209, 49);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .inner {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 1400px;
+    height: 750px;
+    background-color: white;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .navbar {
+    width: 410px;
+    height: 100%;
+    background-color: rgb(219, 214, 214);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+  }
+  
+  .search {
+    margin-top: -150%;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+  }
+  
+  #srch {
+    background-color: rgb(190, 188, 188);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #srch:focus {
+    box-shadow: 0 0 8px rgba(255, 191, 0, 0.4);
+    outline: none;
+  }
+  
+  .box-cont1 {
+    width: 350px;
+    height: 120px;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .boxes {
+    background-color: rgb(190, 188, 188);
+    /* margin-top: 30px; */
+    margin: 10px;
+    margin-left: -5px;
+    width: 175px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .boxes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box-upper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .box-lower {
+    width: 150px;
+    font-size: 20px;
+    padding-left: 13px;
+    color: rgb(81, 80, 80);
+    font-weight: 700;
+  }
+  
+  .box-task-no {
+    color: rgb(81, 80, 80);
+    margin-left: 40px;
+    width: 80px;
+    height: 50px;
+    margin-top: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  .box-icon {
+    border: 1px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-name {
+    border: 1px solid black;
+    width: 10px;
+  }
+  
+  .list-outer {
+    width: 100%;
+    height: 330px;
+  }
+  
+  .add-list {
+    border-top: 1px solid grey;
+    width: 100%;
+    height: 40px;
+    margin-top: 25.5px;
+    display: flex;
+  }
+  
+  .list-text {
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    color: rgb(108, 107, 107);
+  }
+  
+  .list {
+    height: 45px;
+    margin-top: 6px;
+    display: flex;
+    animation: slideIn 0.3s ease-out;
+    transition: background-color 0.2s ease;
+  }
+  
+  .list:hover {
+    background-color: rgba(255, 191, 0, 0.1);
+  }
+  
+  .list-icon {
+    width: 35px;
+    height: 35px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 135, 9);
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .list:hover .list-icon {
+    transform: scale(1.1);
+  }
+  
+  .list-name {
+    width: 250px;
+    margin-left: 5px;
+    height: 25px;
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 550;
+    color: rgb(72, 72, 72);
+  }
+  
+  .list-task-no {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-align: center;
+    color: rgb(174, 173, 173);
+  }
+  
+  .list-add-btn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid rgb(77, 77, 77);
+    background-color: rgb(219, 214, 214);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .list-add-btn:hover {
+    background-color: rgb(255, 191, 0);
+    color: white;
+    border-color: rgb(255, 191, 0);
+    transform: scale(1.1);
+  }
+  
+  .list-add-p {
+    margin-left: 15px;
+    display: flex;
+    font-size: 19px;
+    margin-top: 4px;
+  }
+  
+  .main-tab {
+    width: 990px;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .main-top {
+    width: 100%;
+    height: 50px;
+    border-top-right-radius: 25px;
+    display: flex;
+  }
+  
+  .add-task {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    left: 95%;
+    margin-top: 7px;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+  }
+  
+  .add-task-btn {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(77, 77, 77);
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .add-task-btn:hover {
+    transform: rotate(90deg);
+    color: rgb(255, 191, 0);
+  }
+  
+  .title-outer {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .title-and-number {
+    width: 100%;
+    height: 90px;
+    display: flex;
+  }
+  
+  .title {
+    width: 75%;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 191, 0);
+    margin-left: 20px;
+  }
+  
+  .task-number {
+    font-size: 60px;
+    font-weight: 500;
+    padding-left: 175px;
+    color: rgb(255, 191, 0);
+  }
+  
+  #task-number {
+    margin-bottom: 20px;
+    height: 100%;
+  }
+  
+  .completed-and-show {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .completed {
+    font-size: 17px;
+    margin-left: 25px;
+    color: rgb(77, 77, 77);
+    font-weight: 700;
+  }
+  
+  .show-btn {
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+    color: rgb(255, 191, 0);
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .show-btn:hover {
+    color: rgb(255, 140, 0);
+    transform: translateY(-2px);
+  }
+  
+  .task-heading {
+    height: 40px;
+    font-size: 30px;
+  }
+  
+  .task-heading p {
+    margin-left: 23px;
+    font-weight: 600;
+    color: rgb(112, 112, 112);
+  }
+  
+  .main-tasks {
+    display: flex;
+    height: 400px;
+  }
+  
+  #taskbox {
+    width: 50%;
+    height: 400px;
+    margin: 10px;
+    overflow: auto; /* Enables scrolling */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    -ms-overflow-style: none;
+  }
+  
+  #taskbox::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+  
+  .taskbox-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    position: sticky;
+  }
+  
+  .taskbox {
+    margin: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: rgb(232, 230, 230);
+    animation: fadeIn 0.4s ease-out;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .taskbox:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .completion {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .completion:hover {
+    transform: scale(1.1);
+  }
+  
+  .completion:checked {
+    background-color: rgb(255, 191, 0);
+    animation: scaleIn 0.2s ease;
+  }
+  
+  .task-content {
+    height: 20px;
+    margin: 15px;
+    width: 300px;
+  }
+  
+  .task-functions {
+    margin: 15px;
+    width: 70px;
+  }
+  
+  .task-functions button {
+    border: none;
+    background-color: rgb(232, 230, 230);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .task-functions button:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+  
+  /* Add smooth scrolling to the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .res {
+    display: none;
+  }
+  
+  .res-close button {
+    border: none;
+    background-color: rgb(248, 246, 246);
+    width: 20px;
+    position: relative;
+    left: 93%;
+    border-top-right-radius: 15px;
+  }
+  
+  .res {
+    position: absolute;
+    background-color: rgb(248, 246, 246);
+    width: 96%;
+    margin-left: 3px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  #task_one {
+    display: none;
+  }
+  
+  /* Style for completed tasks */
+  .del_taskbox_container .taskbox .task-content {
+    text-decoration: line-through;
+    color: rgb(100, 100, 100);
+    background-color: rgb(180, 178, 178);
+    opacity: 0.8;
+    position: relative;
+  }
+  
+  /* Optional: Add a line-through animation */
+  @keyframes strikethrough {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .del_taskbox_container .taskbox .task-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(72, 72, 72);
+    animation: strikethrough 0.3s ease-out forwards;
+  }
+  
+  /* Make completed tasks visually distinct */
+  .del_taskbox_container .taskbox {
+    opacity: 0.9;
+    background-color: rgb(210, 208, 208);
+  }
+  
+  
+  
