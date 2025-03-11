@@ -34,6 +34,22 @@ Here’s a glimpse of the interface in action:
 
 ---
 
+## 🚀 Getting Started
+
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/todo-list.git
+```
+Open `index.html` in your browser to view the project.
+
+To make changes:
+
+- Edit `index.html` for structure
+- Modify `css/style.css` for styling
+- Adjust `css/responsive.css` for responsive design
+
+---
+
 ## 🚀 How to Use
 
 1️⃣ **Open the web app** in your preferred browser.  
@@ -51,6 +67,44 @@ Here’s a glimpse of the interface in action:
 🚀 **Drag-and-Drop Functionality** – Rearrange tasks easily with a simple drag-and-drop action 🔀  
 🚀 **Reminders & Notifications** – Get timely alerts for important tasks 🔔  
 🚀 **Cloud Storage Integration** – Sync your tasks across multiple devices ☁️  
+
+---
+
+## 🤝 Contributing
+
+🎯 Contributions are welcome! Here's how you can help:
+
+1. **Fork the project**
+2. **Create your feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+Your contributions make this project even better! 🚀
+
+---
+
+## ⚖️ License
+
+📌 This project is for educational purposes only and does not intend to infringe any trademarks or copyrights. 
+
+📝 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+Special thanks to:
+- **Bootstrap** for providing an amazing framework.
+- **Font Awesome** for the beautiful icons.
+- **All contributors and feedback providers** for improving this project.
+
+---
+
+## 📬 Contact
+
+Himanshu Dusane - [LinkedIn]([#](https://www.linkedin.com/in/himanshu-dusane-5a8ab6274/))  
+Social - [Instagram]([#](https://www.instagram.com/_.himanxhu_.1/))
 
 ---
 
