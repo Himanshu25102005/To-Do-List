@@ -103,10 +103,14 @@ Special thanks to:
 
 ## 📬 Contact
 
-Himanshu Dusane - [LinkedIn]([#](https://www.linkedin.com/in/himanshu-dusane-5a8ab6274/))  
-Social - [Instagram]([#](https://www.instagram.com/_.himanxhu_.1/))
+Himanshu Dusane - [LinkedIn](https://www.linkedin.com/in/himanshu-dusane-5a8ab6274/)
+
+Social - [Instagram](https://www.instagram.com/_.himanxhu_.1/)
 
 ---
+
+⭐️ If you found this project helpful, please give it a star!
+
 
 ### 🎉 Thank You for Checking Out This Project! 
 I hope this tool helps you stay on track and boost your productivity. If you have any suggestions or feedback, feel free to share! 🚀😊
