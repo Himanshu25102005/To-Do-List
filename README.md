@@ -17,7 +17,7 @@ Welcome to the **To-Do List Web App**! ✅ This feature-rich task manager helps 
 
 ## 🛠 Tech Stack
 
-Our app is built using modern web technologies to ensure smooth performance and an engaging user experience:
+Our app is built using modern web technologies to ensure smooth performance and an engaging user experience:-
 
 - **HTML** 🏗️ – Provides the structure of the application.
 - **CSS** 🎨 – Enhances the visual appeal with styles and effects.
