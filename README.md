@@ -28,7 +28,7 @@ Our app is built using modern web technologies to ensure smooth performance and 
 
 ## 📸 Screenshots
 
-Here’s a glimpse of the interface in action:
+Here’s a glimpse of the interface in action:-
 
 ![To-Do List Screenshot](screenshots/ss1.png)
 
