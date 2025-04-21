@@ -36,7 +36,7 @@ Here’s a glimpse of the interface in action:-
 
 ## 🚀 Getting Started
 
-Clone the repository:
+Clone the repository:-
 ```bash
 git clone https://github.com/yourusername/todo-list.git
 ```
